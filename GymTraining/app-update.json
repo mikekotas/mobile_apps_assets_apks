@@ -1,0 +1,7 @@
+{
+"versionCode": 101,
+"versionName": "1.0.1",
+"forceUpdate": false,
+"updateMessage": "What's new:<br>- Bug fixes<br>- Performance improvements<br>- New features",
+"downloadUrl": "https://your-server.com/updates/your-app-v1.0.1.apk"
+}
