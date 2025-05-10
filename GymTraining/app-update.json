@@ -1,7 +1,19 @@
 {
-"versionCode": 102,
-"versionName": "1.0.2",
-"forceUpdate": false,
-"updateMessage": "What's new:<br>- Bug fixes<br>- Performance improvements<br>- New features",
-"downloadUrl": "https://mikekotas.github.io/mobile_apps_assets_apks/GymTraining/your-app-v1.0.2.apk"
+  "android": {
+    "versionCode": 102,
+    "versionName": "1.0.2",
+    "forceUpdate": false,
+    "updateMessage": "Android updates:<br>- Bug fixes<br>- New features",
+    "downloadUrl": "https://.../app-android.apk"
+  },
+  "ios": {
+    "versionCode": 45,
+    "versionName": "1.1.0",
+    "forceUpdate": true,
+    "updateMessage": "iOS updates:<br>- Performance improvements",
+    "downloadUrl": "https://.../app.ipa"
+  },
+  "web": {
+    "message": "For best experience, use our mobile app"
+  }
 }
