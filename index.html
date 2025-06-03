@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Download Gym Training App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #f2f2f2;
+      padding: 40px 20px;
+      color: #333;
+      text-align: center;
+    }
+    h1 {
+      color: #222;
+    }
+    .app-block {
+      max-width: 500px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .platform {
+      margin-top: 30px;
+    }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+      padding: 14px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      color: white;
+      transition: background 0.3s ease;
+    }
+    .android-btn {
+      background-color: #34a853;
+    }
+    .ios-btn {
+      background-color: #0073e6;
+    }
+    .download-btn:hover {
+      opacity: 0.9;
+    }
+    .update-message {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>📱 Download the Gym Training App</h1>
+  <div class="app-block">
+    <div class="platform" id="android-section">
+      <h2>🤖 Android</h2>
+      <div id="android-version">Version: Loading...</div>
+      <a id="android-download" class="download-btn android-btn" href="#" download>Download Android</a>
+      <div class="update-message" id="android-message"></div>
+    </div>
+    <div class="platform" id="ios-section">
+      <h2>🍎 iPhone</h2>
+      <div id="ios-version">Version: Loading...</div>
+      <a id="ios-download" class="download-btn ios-btn" href="#" download>Download iPhone</a>
+      <div class="update-message" id="ios-message"></div>
+    </div>
+  </div>
+
+  <script>
+    async function fetchUpdateData() {
+      try {
+        const res = await fetch('https://mikekotas.github.io/mobile_apps_assets_apks/GymTraining/app-update.json');
+        const data = await res.json();
+
+        // Android
+        document.getElementById('android-version').textContent = `Version: ${data.android.versionName}`;
+        document.getElementById('android-download').href = data.android.downloadUrl;
+        document.getElementById('android-message').innerHTML = data.android.updateMessage;
+
+        // iOS
+        document.getElementById('ios-version').textContent = `Version: ${data.ios.versionName}`;
+        document.getElementById('ios-download').href = data.ios.downloadUrl;
+        document.getElementById('ios-message').innerHTML = data.ios.updateMessage;
+
+      } catch (e) {
+        console.error('Failed to fetch update info:', e);
+      }
+    }
+
+    fetchUpdateData();
+  </script>
+</body>
+</html>
