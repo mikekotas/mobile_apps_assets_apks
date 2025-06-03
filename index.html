@@ -204,7 +204,8 @@
 
     function initTheme() {
       const saved = localStorage.getItem('theme');
-      if (saved) document.documentElement.setAttribute('data-theme', saved);
+      const defaultTheme = 'dark'; // 🔥 default to dark mode
+      document.documentElement.setAttribute('data-theme', saved || defaultTheme);
     }
 
     initTheme();
