@@ -128,6 +128,7 @@
       color: #ccc;
     }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 </head>
 
 <body>
@@ -145,7 +146,7 @@
         <div class="update-message" id="android-message"></div>
       </div>
       <div class="qr-code">
-        <img id="android-qr" src="" alt="Android QR Code" width="140">
+       <div id="android-qr"></div>
       </div>
     </div>
 
@@ -158,7 +159,7 @@
         <div class="update-message" id="ios-message"></div>
       </div>
       <div class="qr-code">
-        <img id="ios-qr" src="" alt="iOS QR Code" width="140">
+       <div id="ios-qr"></div>
       </div>
     </div>
   </div>
@@ -173,13 +174,21 @@
         document.getElementById('android-version').textContent = `Version: ${data.android.versionName}`;
         document.getElementById('android-download').href = androidLink;
         document.getElementById('android-message').innerHTML = data.android.updateMessage;
-        document.getElementById('android-qr').src = `https://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=${encodeURIComponent(androidLink)}`;
+        new QRCode(document.getElementById('android-qr'), {
+            text: androidLink,
+            width: 140,
+            height: 140
+          });
 
         const iosLink = data.ios.downloadUrl;
         document.getElementById('ios-version').textContent = `Version: ${data.ios.versionName}`;
         document.getElementById('ios-download').href = iosLink;
         document.getElementById('ios-message').innerHTML = data.ios.updateMessage;
-        document.getElementById('ios-qr').src = `https://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=${encodeURIComponent(iosLink)}`;
+        new QRCode(document.getElementById('ios-qr'), {
+          text: iosLink,
+          width: 140,
+          height: 140
+        });
       } catch (e) {
         console.error('Failed to fetch update info:', e);
       }
