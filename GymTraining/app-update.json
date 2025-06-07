@@ -1,16 +1,16 @@
 {
   "android": {
-    "versionCode": 103,
-    "versionName": "1.0.3",
+    "versionCode": 100,
+    "versionName": "1.0.0",
     "forceUpdate": false,
-    "updateMessage": "Android updates:<br>- Bug fixes<br>- New features",
-    "downloadUrl": "https://mikekotas.github.io/mobile_apps_assets_apks/GymTraining/your-app.apk"
+    "updateMessage": "Android Initial Release",
+    "downloadUrl": "https://mikekotas.github.io/mobile_apps_assets_apks/GymTraining/GymBuddyGreece-v1.0.0.apk"
   },
   "ios": {
-    "versionCode": 46,
-    "versionName": "1.0.3",
+    "versionCode": 10,
+    "versionName": "1.0.0",
     "forceUpdate": true,
-    "updateMessage": "iOS updates:<br>- Performance improvements",
+    "updateMessage": "iOS Initial Release",
     "downloadUrl": "https://mikekotas.github.io/mobile_apps_assets_apks/GymTraining/your-app.ipa"
   },
   "web": {
