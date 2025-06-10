@@ -9,7 +9,7 @@
   "ios": {
     "versionCode": 10,
     "versionName": "1.0.0",
-    "forceUpdate": true,
+    "forceUpdate": false,
     "updateMessage": "iOS Initial Release",
     "downloadUrl": "https://mikekotas.github.io/mobile_apps_assets_apks/GymTraining/your-app.ipa"
   },
