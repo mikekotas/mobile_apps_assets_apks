@@ -7,7 +7,7 @@
     "downloadUrl": "https://mikekotas.github.io/mobile_apps_assets_apks/GymTraining/GymBuddyGreece-v1.0.3.apk"
   },
   "ios": {
-    "versionCode": 10,
+    "versionCode": 100,
     "versionName": "1.0.0",
     "forceUpdate": false,
     "updateMessage": "iOS Initial Release",
