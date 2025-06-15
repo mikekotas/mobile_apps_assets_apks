@@ -6,13 +6,6 @@
     "updateMessage": "Added spinner between apth changes",
     "downloadUrl": "https://mikekotas.github.io/mobile_apps_assets_apks/GymTraining/GymBuddyGreece-v1.0.3.apk"
   },
-  "ios": {
-    "versionCode": 101,
-    "versionName": "1.0.1",
-    "forceUpdate": false,
-    "updateMessage": "iOS Initial Release",
-    "downloadUrl": "https://mikekotas.github.io/mobile_apps_assets_apks/GymTraining/your-app.ipa"
-  },
   "web": {
     "message": "For best experience, use our mobile app"
   }
