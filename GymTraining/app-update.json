@@ -1,10 +1,10 @@
 {
   "android": {
-    "versionCode": 103,
-    "versionName": "1.0.3",
+    "versionCode": 104,
+    "versionName": "1.0.4",
     "forceUpdate": false,
-    "updateMessage": "Added spinner between apth changes",
-    "downloadUrl": "https://mikekotas.github.io/mobile_apps_assets_apks/GymTraining/GymBuddyGreece-v1.0.3.apk"
+    "updateMessage": "UPDATED STATS MODULES",
+    "downloadUrl": "https://mikekotas.github.io/mobile_apps_assets_apks/GymTraining/GymBuddyGreece-v1.0.4.apk"
   },
   "web": {
     "message": "For best experience, use our mobile app"
