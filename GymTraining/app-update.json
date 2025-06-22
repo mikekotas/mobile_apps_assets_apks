@@ -1,10 +1,10 @@
 {
   "android": {
-    "versionCode": 104,
-    "versionName": "1.0.4",
+    "versionCode": 105,
+    "versionName": "1.0.5",
     "forceUpdate": false,
-    "updateMessage": "UPDATED STATS MODULES",
-    "downloadUrl": "https://mikekotas.github.io/mobile_apps_assets_apks/GymTraining/GymBuddyGreece-v1.0.4.apk"
+    "updateMessage": "Enabled Live Stripe",
+    "downloadUrl": "https://mikekotas.github.io/mobile_apps_assets_apks/GymTraining/GymBuddyGreece-v1.0.5.apk"
   },
   "web": {
     "message": "For best experience, use our mobile app"
